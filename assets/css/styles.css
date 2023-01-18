@@ -1,31 +1,32 @@
 /* font */
 /* Inter */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* raleway */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* resets */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter',sans-serif;
+    font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* variables */
-:root{
+:root {
     --white-color: #f5f5f5;
     --cream-color: #fff3e5;
-    --yellow-color: #FAD273;
+    --yellow-color: #fad273;
     --brown-color: #463225;
-    --red-color: #FA875D;
+    --red-color: #fa875d;
     --pink-color: #fc4c4e;
-    --purple-color: #533E85;
+    --purple-color: #533e85;
     --black-color: #454545;
     --blue-color: #022d36;
     --default-transition: 0.4s all ease-in;
 }
 
-body{
+body {
     background-color: var(--cream-color);
     color: var(--brown-color);
     display: flex;
@@ -35,70 +36,97 @@ body{
 
 /* navbar */
 
-header{
+header {
     display: flex;
     justify-content: space-between;
-    padding:2rem 2rem;
+    padding: 2rem 2rem;
     background-color: var(--red-color);
     color: var(--white-color);
     font-weight: 600;
 }
 
-.logo{
+.logo {
     text-decoration: none;
     color: var(--white-color);
 }
 
-
-.navbar{
+.navbar {
     display: flex;
     list-style-type: none;
 }
 
-.nav-item{
-    padding: 0 1rem;
+.nav-item {
+    padding: 0.3rem 1rem;
 }
 
-
-.nav-link{
+.nav-link {
     text-decoration: none;
     color: var(--white-color);
     transition: var(--default-transition);
 }
 
-.nav-link:hover{
+.nav-item.active{
+    background-color: #4545452c;
+    border-radius: 1rem;
+}
+
+.nav-link:hover {
     color: var(--blue-color);
 }
 
-.nav-menu{
+
+.nav-menu {
     display: none;
     cursor: pointer;
 }
 
 /* Main */
-main{
+main {
     flex: 1;
 }
 
 /* Footer */
-footer{
+footer {
     padding: 1rem;
     text-align: center;
     border-top: 0.1rem solid var(--brown-color);
 }
 
-.footer-link{
+.footer-link {
     text-decoration: none;
     color: var(--pink-color);
     font-weight: 500;
 }
 
 /* media queries */
-@media screen and (max-width: 550px) {
-    navbar {
-      display: block;
+@media screen and (max-width: 650px) {
+    header {
+        flex-direction: column;
     }
+
+    .logo-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+        display: none;
+        transition: 1s all ease;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+    .nav-item {
+        padding: 0.5rem 0;
+    }
+
     .nav-menu {
-      display: inline;
+        display: inline;
     }
-  }
+}
