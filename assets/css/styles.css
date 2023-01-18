@@ -101,6 +101,8 @@ main .seperator{
     width: 100px;
     background-color: var(--brown-color);
     margin: 5px auto;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px 1px #d29f9fa8;
 } 
 
 

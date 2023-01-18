@@ -8,6 +8,6 @@ Set: B
 
 ### Tasks 
 - [X] Create a website with canvas to insert photos and keep sliding effects with css
-- [ ] Create a form to accept Arabic langiage in HTML and CSS
-- [ ] Create a responsive page to display news style with CSS (two columns with headings)
+- [X] Create a form to accept Arabic language in HTML and CSS
+- [X] Create a responsive page to display news style with CSS (two columns with headings)
 - [ ] Create a html page which displays content in list when maximized and in grid when made small size.
