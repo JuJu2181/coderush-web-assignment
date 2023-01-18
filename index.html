@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coderush Assignment</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
 </head>
 <body>
@@ -21,7 +22,40 @@
             <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
         </ul>
     </header>
-    <main></main>
+    <main>
+        <div class="image-slider">
+        <div class="image-slide fade">
+            <div class="numbertext">1/4</div>
+            <img src="assets/images/op1.jpg" alt="" style="width:100%">
+            <div class="img-caption">Mugiwara No Luffy</div>
+        </div>
+        <div class="image-slide fade">
+            <div class="numbertext">2/4</div>
+            <img src="assets/images/op2.jpg" alt="" style="width:100%">
+            <div class="img-caption">Hiken No Ace</div>
+        </div>
+        <div class="image-slide fade">
+            <div class="numbertext">3/4</div>
+            <img src="assets/images/op3.jpg" alt="" style="width:100%">
+            <div class="img-caption">Sabo</div>
+        </div>
+        <div class="image-slide fade">
+            <div class="numbertext">4/4</div>
+            <img src="assets/images/op4.jpg" alt="" style="width:100%">
+            <div class="img-caption">ASL</div>
+        </div>
+        <!-- Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </main>
+    <!-- The dots/circles -->
     <footer>
         Copyright &copy; <span id="currentYear"></span> ~ Made with ❤️ by 
         <a href="https://www.linkedin.com/in/anish-shilpakar13/" class="footer-link">Anish Shilpakar</a>
