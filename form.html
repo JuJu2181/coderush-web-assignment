@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,13 +8,16 @@
     <title>Coderush Assignment</title>
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/form.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css' integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css'
+        integrity='sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=='
+        crossorigin='anonymous' />
 </head>
+
 <body>
     <header>
         <div class="logo-wrapper">
-        <a class="logo" href="index.html">AN!SH</a>
-        <span class="nav-menu"><i class="fa-solid fa-bars"></i></span>
+            <a class="logo" href="index.html">AN!SH</a>
+            <span class="nav-menu"><i class="fa-solid fa-bars"></i></span>
         </div>
         <ul class="navbar" id="navbar">
             <li class="nav-item"><a href="index.html" class="nav-link">Image Slider</a></li>
@@ -22,11 +26,33 @@
             <li class="nav-item"><a href="blogs.html" class="nav-link">Blogs</a></li>
         </ul>
     </header>
-    <main></main>
+    <main>
+        <h2>Arabic Form</h2>
+        <div class="seperator"></div>
+        <div class="form-wrapper">
+            <h3>تسجيل الدخول</h3>
+            <form>
+                <div class="txt-field">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name">اسم المستخدم</label>
+                </div>
+                <div class="txt-field">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">كلمة المرور</label>
+                </div>
+                <div class="pass">هل نسيت كلمة السر؟</div>
+                <input type="submit" value="تسجيل الدخول">
+                <div class="signup-link">
+                    ليس عضوا؟  <a href="#">اشتراك</a> 
+                </div>
+            </form>
+        </div>
+    </main>
     <footer>
-        Copyright &copy; <span id="currentYear"></span> ~ Made with ❤️ by 
+        Copyright &copy; <span id="currentYear"></span> ~ Made with ❤️ by
         <a href="https://www.linkedin.com/in/anish-shilpakar13/" class="footer-link">Anish Shilpakar</a>
     </footer>
     <script src="assets/js/index.js"></script>
 </body>
+
 </html>

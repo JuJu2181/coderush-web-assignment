@@ -85,8 +85,24 @@ header {
 /* Main */
 main {
     flex: 1;
+    margin-top: 1.5rem;
     /* width: 90vw; */
+    /* max-height: 90vh; */
 }
+
+main > h2{
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--pink-color);
+}
+
+main .seperator{
+    height: 5px;
+    width: 100px;
+    background-color: var(--brown-color);
+    margin: 5px auto;
+} 
+
 
 /* Footer */
 footer {
