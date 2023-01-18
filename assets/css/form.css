@@ -124,9 +124,9 @@ input[type="submit"] {
     transition: 0.5s all ease-out;
 }
 input[type="submit"]:hover {
-    border-color: var(--blue-color);
+    border-color: var(--green-color);
     background-color: var(--white-color);
-    color: var(--red-color);
+    color: var(--green-color);
     font-size: 1.2rem;
     border-radius: 10px;
     transition: 0.5s;
