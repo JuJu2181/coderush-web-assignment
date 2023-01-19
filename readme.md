@@ -1,9 +1,9 @@
 # Coderush Apprenticeship Program
 ## Individual Project 1
 
-By: Anish Shilpakar  
-Set: B
-Languages Used: HTML, CSS, JS
+**By**: Anish Shilpakar  
+**Set**: B  
+**Languages Used**: HTML, CSS, JS
 
 <hr>
 
