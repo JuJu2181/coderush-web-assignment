@@ -3,6 +3,7 @@
 
 By: Anish Shilpakar  
 Set: B
+Languages Used: HTML, CSS, JS
 
 <hr>
 
